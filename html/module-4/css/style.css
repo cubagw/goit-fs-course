@@ -1,101 +1,202 @@
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .wrapper {
-  font-family: "Playfair Display", serif;
-  width: 900px;
+  width: 1110px;
+  padding-bottom: 46px;
   margin: 0 auto;
-  padding-top: 77px;
-  padding-bottom: 70px;
+  box-sizing: border-box
 }
 
 .main-header {
-  margin-bottom: 103px;
-}
-
-.nav-list {
-  text-align: center;
-  font-size: 0;
-}
-
-.list-item {
-  display: inline-block;
-  font-size: 14px;
-  margin-right: 100px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #626262;
   text-transform: uppercase;
+  padding-top: 37px;
+  margin-bottom: 105px;
 }
 
-.nav-link:hover {
-  color: #03a9f4;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.article-list {
-  font-size: 0;
-  margin-bottom: 53px;
-}
-
-.article-item {
-  width: 420px;
+.site-logo {
+  text-decoration: none;
+  color: #555252;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
   display: inline-block;
-  font-size: 16px;
-  margin: 0px 60px 135px 0px;
 }
 
-.last {
+.site-logo::first-letter {
+  color: #1abc9c;
+  font-weight: 800;
+}
+
+
+.site-navigation {
+  width: 475px;
+  float: right;
+  padding-top: 8px;
+}
+
+.site-navigation li {
+  margin-right: 32px;
+  display: inline-block;
+}
+
+.site-navigation li:last-child {
   margin-right: 0px;
 }
 
-.article-dep {
+.site-navigation-item {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   font-size: 14px;
-  color: #b4ad9e;
-  font-family: "Ubuntu";
-  font-weight: 300;
+  float: left;
+  color: #151115;
+}
+
+.site-navigation-item:hover {
+  color: #1abc9c;
+}
+
+.gallery{
+  margin-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
   text-transform: uppercase;
-  padding: 31px 0px 27px 0px;
+  font-size: 48px;
+  letter-spacing: -1px;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  
+  
 }
 
-.article-title {
-  font-size: 30px;
-  color: #626262;
-  padding-bottom: 40px;
+.section-title::after{
+  content: '';
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 92px;
+  
+
 }
 
-.article-title:first-letter {
-  text-transform: capitalize;
+.products-item{
+  float: left;
+  margin: 0px 30px 30px 0px;
+  font-size: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
 }
 
-.article-text {
-  font-size: 14px;
-  line-height: 24px;
-  color: #626262;
+.products-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
-.lower {
+.products-item:nth-child(n+5) {
   margin-bottom: 0px;
 }
 
-button {
-  width: 160px;
-  height: 60px;
-  display: block;
-  line-height: 24px;
-  font-size: 20px;
-  text-align: center;
-  border: 1px solid black;
-  margin: 0 auto;
-  color: #626262;
-  text-transform: capitalize;
-  font-family: "Playfair Display";
+
+.products-item-info{
+height: 40px;
+width: 255px;
 }
 
-button:hover {
-  border: 2px solid black;
+.products-name{
+  width: 200px;
+  background-color: #323232;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  display: inline-block;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.products-price{
+  width: 55px;
+  float: right;
+  background-color: #8c8c8c;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 11px;
+}
+
+.products-item:hover .products-name {
+  background-color: #1abc9c;
+}
+.products-item:hover .products-price {
+  background-color: #7fd9c7;
+}
+
+
+.news-item{
+  float: left;
+  width: 350px;
+  margin-right: 30px;
+}
+
+.news-item:last-child{
+  margin-right: 0px;
+}
+
+.news-item-title{
+font-size: 18px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #555252;
+font-family: "Open Sans", sans-serif;
+font-weight: bold;
+padding-top: 10px;
+}
+
+.news-item-title::after{
+width: 136px;
+height: 3px;
+background-color: #4ec6ab;
+content: '';
+display: block;
+margin-top: 10px;
+}
+
+.news-item-main{
+font-size: 14px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #555252;
+font-family: "Open Sans", sans-serif;
+padding-top: 25px;
+margin-bottom: 15px;
+}
+
+.news-load-more{
+text-decoration: none;
+text-align: center;
+width: 159px;
+height: 51px;
+border-radius: 3px;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.39);
+background-color: #4ec6ab;
+display: inline-block;
+font-size: 16px;
+line-height: 51px;
+color: #ffffff;
+font-family: "Open Sans", sans-serif;
+font-weight: 300;
+
 }
