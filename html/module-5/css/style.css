@@ -51,6 +51,7 @@
 .site-navigation {
   float: right;
   padding-top: 8px;
+  font-size: 0px;
 }
 
 .site-navigation li {
@@ -79,6 +80,12 @@
   position: relative;
 }
 
+.slider-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .slaider-opasity {
   background-color: #000002;
   opacity: 0.5;
@@ -93,10 +100,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: -2px;
-  /* width: 738px;
-  height: 98px; */
   color: #ffffff;
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,26 +108,19 @@
   display: inline-block;
 }
 
-.slaider-text{
-display: inline-block;
-
-
+.slaider-text {
+  display: inline-block;
 }
 
 .slaider-text-main {
   font-size: 60px;
   font-weight: 700;
-  
   margin-bottom: 30px;
-  
 }
 
 .slaider-text-aside {
   font-size: 24px;
   font-weight: 400;
-  
-  
-  
 }
 
 .button-right {
@@ -324,7 +321,7 @@ display: inline-block;
   font-size: 18px;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 11px;
+  line-height: 40px;
 }
 
 .products-item:hover .products-name {
