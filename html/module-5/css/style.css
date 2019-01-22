@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .wrapper {
   box-sizing: border-box;
   background-color: #555252;
@@ -12,7 +17,7 @@
   margin: 0 auto;
 }
 
-.big-header {
+.wrp-header {
   background-color: #ffffff;
   height: 91px;
 }
@@ -31,6 +36,11 @@
 
 .logo {
   display: inline-block;
+}
+
+.nav{
+  display: inline-block;
+  float: right;
 }
 
 .site-logo {
@@ -52,6 +62,7 @@
   float: right;
   padding-top: 8px;
   font-size: 0px;
+  
 }
 
 .site-navigation li {
@@ -81,12 +92,12 @@
 }
 
 .slider-img {
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 100%;
   height: auto;
 }
 
-.slaider-opasity {
+.slaider-overlay {
   background-color: #000002;
   opacity: 0.5;
   width: 100%;
@@ -106,10 +117,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
+  font-size: 0px;
+  text-align: center;
 }
+
+  
 
 .slaider-text {
   display: inline-block;
+  cursor: pointer;
+  
 }
 
 .slaider-text-main {
@@ -121,23 +138,25 @@
 .slaider-text-aside {
   font-size: 24px;
   font-weight: 400;
+  text-align: left;
 }
 
 .button-right {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 0px;
 }
 
 .button-left {
-  position: relative;
-  top: -20px;
+  position: absolute;;
+  bottom: 0px;
   left: 0px;
+  
 }
 
 .chevron {
   font-size: 50px;
-  background-color: rgb(78, 198, 171);
+  background-color: #4ec6ab;
   opacity: 0.6;
   width: 104px;
   height: 104px;
@@ -145,6 +164,12 @@
   line-height: 103px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
+}
+
+.chevron:hover{
+  background-color: #1abc9c;
+  opacity: 1;
 }
 
 .gallery {
@@ -191,8 +216,8 @@
 
 .products-hover {
   box-sizing: border-box;
-  min-height: 282px;
-  min-width: 255px;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border: 10px;
   border-color: rgba(255, 255, 255, 0.5);
@@ -249,8 +274,8 @@
   box-sizing: border-box;
   border: 1px solid #fff;
   background-color: #323232;
-  min-width: 166px;
-  min-height: 50px;
+  width: 166px;
+  height: 50px;
   opacity: 1;
   cursor: pointer;
 }
@@ -293,12 +318,14 @@
   margin-bottom: 0px;
 }
 
+.products-image{
+  position: relative;
+}
+
 .products-item-info {
   height: 40px;
   width: 255px;
   background-color: #323232;
-  position: absolute;
-  bottom: 0px;
 }
 
 .products-name {
