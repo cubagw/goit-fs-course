@@ -95,3 +95,43 @@ font-family: "Montserrat", sans-serif;
 font-weight: 700;
 text-transform: uppercase;
 }
+
+
+.services-list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.services-list-item{
+  width: 340px;
+}
+
+.services-img{
+  
+  background: url(../img/sprites.png) no-repeat;
+  
+}
+
+
+.clock{
+	background-position: -153px -4px ;
+	width: 13px;
+	height: 26px;
+	
+}
+
+.services-title{
+font-size: 14px;
+color: #333333;
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.services-description{
+font-size: 15px;
+color: #999999;
+font-family: "Roboto";
+font-weight: 400;
+}

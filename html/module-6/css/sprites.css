@@ -1,0 +1,64 @@
+.book, .clock, .COMPUTER, .facebook, .HOME, .IMAGE, .instagram, .LINE-GRAPH, .pinterest, .twitter{
+	background: url(sprites.png) no-repeat;
+}
+
+.book{
+	background-position: -447px -2px ;
+	width: 32px;
+	height: 32px;
+}
+
+.clock{
+	background-position: -393px -4px ;
+	width: 32px;
+	height: 31px;
+}
+
+.COMPUTER{
+	background-position: -288px -2px ;
+	width: 32px;
+	height: 28px;
+}
+
+.facebook{
+	background-position: -153px -4px ;
+	width: 13px;
+	height: 26px;
+}
+
+.HOME{
+	background-position: -239px -4px ;
+	width: 32px;
+	height: 31px;
+}
+
+.IMAGE{
+	background-position: -196px -5px ;
+	width: 32px;
+	height: 32px;
+}
+
+.instagram{
+	background-position: -93px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.LINE-GRAPH{
+	background-position: -346px -2px ;
+	width: 32px;
+	height: 32px;
+}
+
+.pinterest{
+	background-position: -50px -1px ;
+	width: 21px;
+	height: 26px;
+}
+
+.twitter{
+	background-position: 0 0;
+	width: 26px;
+	height: 22px;
+}
+
