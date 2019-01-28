@@ -3,6 +3,7 @@ font-family: "Montserrat", sans-serif;
 font-family: "Roboto", sans-serif;
 
 font-family: "Kaushan Script", cursive;
+// Remove border and padding in Firefox
 
 html {
   margin: 0;
@@ -13,9 +14,8 @@ html {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  
 }
-.site-main{
+.site-main {
   padding-bottom: 40px;
 }
 .main-header {
@@ -50,7 +50,7 @@ html {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  transition: color 200ms linear
+  transition: color 200ms linear;
 }
 
 .nav-list-link::after {
@@ -61,7 +61,7 @@ html {
   background-color: #f38181;
   margin-top: 10px;
   opacity: 0;
-  transition: opacity 200ms linear
+  transition: opacity 200ms linear;
 }
 
 .nav-list-link:hover {
@@ -97,6 +97,7 @@ html {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   margin-bottom: 15px;
+  display: block;
 }
 
 .title-header:first-letter {
@@ -190,6 +191,11 @@ html {
   line-height: 24px;
 }
 
+.team-list{
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-text {
   font-size: 15px;
   color: #999999;
@@ -201,51 +207,81 @@ html {
 
 .team-list-item {
   width: 380px;
-  
 }
+
+.team-list-item:hover .team-image-overlay{
+  opacity: 0.9;
+  top: -10px;
+  left: -10px;
+}
+
+/* .team-list-item:hover .clear-image {
+  top: -10px;
+  left: -10px;
+} */
 
 .team-image {
   margin-bottom: 30px;
   position: relative;
 }
 
-.team-image-overlay{
- height: 100%;
- width: 100%;
- font-size: 0px;
- background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
- position: absolute;
- top: 0px;
- left: 0px;
- opacity: 0.9;
- display: flex;
- justify-content: center;
- align-items: center
+.team-image-overlay {
+  height: 100%;
+  width: 100%;
+  font-size: 0px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: all 200ms linear;
 }
 
-.facebook{
-  
-	background-position: -156px -1px ;
-	}
-.pinterest{
-    background-position: -51px 0;
-    }
-.instagram{
-        background-position: -96px -3px ;
-        }
-.twitter{ background-position: -6px -4px ;
-  }
 
-.soc-button{
+
+.clear-image{
+  position: relative;
+  transition: 200ms linear;
+  z-index: 2;
+}
+
+.team-list-item:hover .clear-image {
+  top: -10px;
+  left: -10px;
+}
+
+.team-image-background{
+  position: absolute;
+  background-color: #95e1d3;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.soc-button {
   width: 55px;
   height: 55px;
-  background-image: url(../img/sprites.png) no-repeat;
   background-color: #fce38a;
   display: inline-block;
   margin-right: 1px;
- }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms linear;
+}
 
-
+.soc-button:hover{
+  background-color:#95e1d3
+}
 .team-link {
   text-decoration: none;
 }
@@ -268,20 +304,57 @@ html {
   text-align: center;
 }
 
-.site-footer{
+.site-footer {
   min-height: 60px;
-  background-color: #fce38a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5
 }
 
-.copyright{
-font-size: 14px;
-color: #333333;
-font-family: "Montserrat";
-font-weight: 400;
 
+
+.copyright {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 
-.avtor{
+.avtor {
   text-decoration: none;
   color: #f38181;
+}
+
+.subscribe-form {
+  font-size: 0px;
+}
+
+.input-email {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  width: 234px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  /* box-sizing: content-box; */
+}
+
+.button-subscribe {
+  background-color: rgb(149, 225, 211);
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
 }
