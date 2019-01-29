@@ -229,11 +229,10 @@ html {
   height: 100%;
   width: 100%;
   font-size: 0px;
-  background-image: -moz-linear-gradient(
-    90deg,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
-  );
+  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+
   position: absolute;
   top: 0px;
   left: 0px;
