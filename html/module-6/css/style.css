@@ -232,7 +232,6 @@ html {
   background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-
   position: absolute;
   top: 0px;
   left: 0px;
@@ -248,13 +247,12 @@ html {
 
 .clear-image{
   position: relative;
-  transition: 200ms linear;
+  transition: all 200ms linear;
   z-index: 2;
 }
 
 .team-list-item:hover .clear-image {
-  top: -10px;
-  left: -10px;
+  transform:  translate(-10px, -10px)
 }
 
 .team-image-background{
