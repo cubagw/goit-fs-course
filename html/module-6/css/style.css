@@ -217,10 +217,7 @@ html {
   left: -10px;
 }
 
-/* .team-list-item:hover .clear-image {
-  top: -10px;
-  left: -10px;
-} */
+
 
 .team-image {
   margin-bottom: 30px;
@@ -251,6 +248,7 @@ html {
   position: relative;
   transition: all 200ms linear;
   z-index: 2;
+  display: block;
 }
 
 .team-list-item:hover .clear-image {
