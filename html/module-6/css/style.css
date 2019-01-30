@@ -23,7 +23,8 @@ html {
   justify-content: space-between;
   min-height: 50px;
   align-items: flex-end;
-  margin-bottom: 125px;
+  padding-bottom: 125px;
+  align-items: first baseline;
 }
 
 .site-logo {
@@ -45,6 +46,7 @@ html {
 
 .nav-list-link {
   text-decoration: none;
+  display: block;
   color: #7fd9c7;
   font-size: 14px;
   text-transform: uppercase;
@@ -84,6 +86,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 60px;
 
 }
 
@@ -94,7 +97,6 @@ html {
   height: 3px;
   background-color: #f38181;
   margin: 0 auto;
-  margin-bottom: 60px;
   margin-top: 40px;
 }
 
@@ -115,14 +117,15 @@ html {
 
 
 .services {
-  margin-bottom: 90px;
+  padding-bottom: 90px;
+  
 }
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* height: 240px; */
+  
   width: 100%;
 }
 
@@ -196,6 +199,7 @@ html {
 .team-list{
   display: flex;
   justify-content: space-between;
+ 
 }
 
 .team-text {
@@ -274,6 +278,29 @@ html {
   justify-content: center;
   align-items: center;
   transition: background-color 200ms linear;
+}
+
+.facebook{
+	background-position: -156px -1px ;
+	width: 13px;
+	height: 26px;
+}
+
+.instagram{
+	background-position: -96px -3px ;
+	width: 26px;
+	height: 26px;
+}
+.pinterest{
+	background-position: -51px 0;
+	width: 21px;
+	height: 26px;
+}
+
+.twitter{
+	background-position: -6px -4px ;
+	width: 26px;
+	height: 22px;
 }
 
 .soc-button:hover{
