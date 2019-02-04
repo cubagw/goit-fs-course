@@ -57,7 +57,7 @@
 
    /* ibm-plex-serif-italic - latin */
    @font-face {
-     font-family: 'Serif';
+     font-family: 'Serif-regular';
      font-style: italic;
      font-weight: 400;
      src: local('IBM Plex Serif Italic'), local('IBMPlexSerif-Italic'),
