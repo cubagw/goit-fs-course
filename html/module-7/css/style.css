@@ -19,7 +19,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
-  padding: 50px 0 125px 0;
+  padding-top: 50px;
 }
 
 .site-logo{
@@ -58,7 +58,7 @@ color: #fed136;
 
 .services{
   
-  padding-bottom: 115px;
+  padding: 125px 0 115px 0;
 }
 .section-title{
 font-size: 40px;
@@ -179,7 +179,7 @@ font-family: "Roboto Slab", sans-serif;
 .message-text{
   resize: none;
   width: 455px;
-  height: 209px;
+  height: 215px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(204, 204, 204);
@@ -215,12 +215,20 @@ font-family: "Montserrat_Bold", sans-serif;
 text-transform: uppercase;
 }
 
-input:invalid{
-  outline: 2px solid #ff0000
+input:not(:last-child):focus:invalid{
+  outline: 1px solid #ff0000
 }
 
-input:valid{
-  outline: 2px solid #229717
+input:not(:last-child):valid{
+  outline: 1px solid #229717
+}
+
+textarea:focus:invalid{
+  outline: 1px solid #ff0000
+}
+
+textarea:valid{
+  outline: 1px solid #229717
 }
 
 .info-input::placeholder{
