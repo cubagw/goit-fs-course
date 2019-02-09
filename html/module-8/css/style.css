@@ -1,12 +1,8 @@
-@import "./normalize.css";
-
 @import "./reset.css";
 
 @import "./fonts.css";
 
 @import "./sprites.css";
-
-
 
 html {
   margin: 0;
@@ -18,4 +14,99 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header {
+  
+  /* padding: 20px 20px ; */
+  position: absolute;
+}
+
+.saite-navigation {
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saite-navigation {
+}
+
+.nav-list-item {
+  width: 90px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;;
+  font-family: "Montserrat_Bold", sans-serif;
+}
+
+.nav-list-link:focus .log_in {
+}
+
+.page-banner {
+  height: 540px;
+  background-image: url(..//img/main_photo_mob.png);
+}
+
+.page-banne__site-logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Montserrat_Bold", sans-serif;
+  text-align: center;
+  padding-top: 175px;
+  padding-bottom: 35px;
+}
+
+.page-banner__slogan {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Montserrat_Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+  line-height: 1.2;
+}
+
+.page-banner__sub-slogan {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Roboto_Light", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.page-banner__search-partner{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Montserrat_Bold", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+
+
 }
