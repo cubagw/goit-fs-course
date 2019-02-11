@@ -80,12 +80,12 @@ a {
 }
 
 .page-banner {
-  height: 540px;
+  height: 100vh;
   background-image: url(..//img/baner-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(26, 25, 21);
-  
+  background-size: cover;
 }
 
 .page-banner__slogan {
