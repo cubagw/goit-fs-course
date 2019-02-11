@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-  width:236px;
+  width:100%;
   margin: 0 auto;
   text-decoration: none;
   
@@ -154,6 +154,8 @@ a {
 .partners__partners-list-item {
   text-decoration: none;
   padding-bottom: 25px;
+  width: 235px;
+  margin: 0 auto;
  
 }
 
@@ -229,15 +231,13 @@ a {
 }
 
 @media(min-width:748px){
+  
   .container{
-    width: 100%;
+    width: 748px;
   }
   .page-header{
     width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 45px 50px 150px 50px;
+    padding: 45px 50px 0px 50px;
     box-sizing: border-box;
     
   }
