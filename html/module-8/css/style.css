@@ -34,16 +34,20 @@ a {
 
 .page-header {
   position: absolute;
-  padding: 20px 65px 120px 65px;
+  padding: 20px 65px 0px 65px;
 }
 
 .saite-authorization {
   padding-bottom: 110px;
 }
-
-.authorization-list {
+.header{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.authorization-list {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .authorization-list-item {
@@ -76,7 +80,7 @@ a {
   color: #ffffff;
   font-family:var(--main-font);
   text-align: center;
-  
+  display:none;
 }
 
 .page-banner {
@@ -88,6 +92,16 @@ a {
   background-size: cover;
 }
 
+.page-banner__logo{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family:var(--main-font);
+  text-align: center;
+  padding-top: 170px;
+}
+
 .page-banner__slogan {
   font-size: 30px;
   color: #ffffff;
@@ -96,7 +110,7 @@ a {
   text-align: center;
   padding-bottom: 15px;
   line-height: 1.2;
-  padding-top: 225px;
+  padding-top: 35px;
 }
 
 .page-banner__sub-slogan {
@@ -225,5 +239,19 @@ a {
     justify-content: space-between;
     padding: 45px 50px 150px 50px;
     box-sizing: border-box;
+    
+  }
+  .page-header__site-logo{
+    display: block;
+  }
+  .page-banner__logo{
+    display: none;
+  }
+  .page-banner__slogan{
+    padding-top: 225px;
+    font-size: 52px;
+  }
+  .page-banner__sub-slogan {
+    font-size: 24px;
   }
 }
