@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   text-decoration: none;
   /* padding: 0 30px 0 30px;
@@ -214,9 +214,9 @@ a {
   
 }
 
-@media(min-width:747px){
+@media(min-width:748px){
   .container{
-    width: 748px;
+    width: 100%;
   }
   .page-header{
     width: 100%;
