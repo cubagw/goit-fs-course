@@ -25,11 +25,10 @@ a {
 }
 
 .container {
-  width: 100%;
+  width:236px;
   margin: 0 auto;
   text-decoration: none;
-  /* padding: 0 30px 0 30px;
-  box-sizing: border-box; */
+  
 }
 
 .page-header {
@@ -47,7 +46,7 @@ a {
 }
 .authorization-list {
   display: flex;
-  /* justify-content: space-between; */
+  
 }
 
 .authorization-list-item {
@@ -155,6 +154,7 @@ a {
 .partners__partners-list-item {
   text-decoration: none;
   padding-bottom: 25px;
+ 
 }
 
 .partners-foto {
