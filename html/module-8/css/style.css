@@ -4,6 +4,10 @@
 
 @import "./sprites.css";
 
+@import "./vars.css";
+
+
+
 html {
   margin: 0;
   padding: 0;
@@ -24,17 +28,17 @@ a {
   width: 320px;
   margin: 0 auto;
   text-decoration: none;
-  /* padding: 0 30px 0 30px; */
-  box-sizing: border-box;
+  /* padding: 0 30px 0 30px;
+  box-sizing: border-box; */
 }
 
 .page-header {
   position: absolute;
-
+  padding: 20px 65px 120px 65px;
 }
 
 .saite-authorization {
-  padding: 20px 60px 120px 60px;
+  padding-bottom: 110px;
 }
 
 .authorization-list {
@@ -46,11 +50,12 @@ a {
   width: 90px;
   height: 36px;
   border-radius: 18px;
-  border: 2px solid rgba(255, 255, 255, 0);
+  
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-sizing: border-box
 }
 
 .authorization-list-item:hover {
@@ -62,15 +67,16 @@ a {
   text-decoration: none;
   font-size: 14px;
   color: #ffffff;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family: var(--main-font);
 }
 .page-header__site-logo {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   color: #ffffff;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family:var(--main-font);
   text-align: center;
+  
 }
 
 .page-banner {
@@ -78,6 +84,7 @@ a {
   background-image: url(..//img/baner-image.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(26, 25, 21);
   
 }
 
@@ -95,7 +102,7 @@ a {
 .page-banner__sub-slogan {
   font-size: 18px;
   color: #ffffff;
-  font-family: "Roboto_Light", sans-serif;
+  font-family: var(--semi-font);
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -106,7 +113,7 @@ a {
   text-decoration: none;
   display: block;
   font-size: 14px;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family: var(--main-font);
   color: #ffffff;
   text-align: center;
   border-radius: 20px;
@@ -117,17 +124,23 @@ a {
   line-height: 40px;
 }
 
+
+.partners{
+  padding-bottom: 55px;
+}
+
 .partners__slogan {
   font-size: 22px;
   color: #333333;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family: var(--main-font);
   padding-top: 65px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .partners__partners-list-item {
   text-decoration: none;
-  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .partners-foto {
@@ -140,11 +153,9 @@ a {
 .partners-foto::before {
   content: "";
   display: block;
-  background-color: #ff4e50;
   position: absolute;
   background-image: url(../img/icon_tv_mob.png);
   background-repeat:no-repeat;
-  
   background-position:center; 
   bottom: 0;
   right: 0;
@@ -155,10 +166,26 @@ a {
   border: 4px solid #ffffff;
 }
 
+.butl::before{
+  background-color: #ffa507;
+  background-image: url(../img/icon_butl_mob.png);
+}
+
+.coffee::before{
+  background-color: #1cd7ad;
+  background-image: url(../img/icon_coffee.png);
+}
+
+
+.plain::before{
+  background-color: #4e73db;
+  background-image: url(../img/icon_plain.png);
+}
+
 .partners__partners-name {
   font-size: 14px;
   color: #333333;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family: var(--main-font);
   text-align: center;
   padding-top: 20px;
 }
@@ -166,7 +193,37 @@ a {
 .partners__partners-interest {
   font-size: 14px;
   color: #666666;
-  font-family: "Roboto_Light", sans-serif;
+  font-family: var(--semi-font);
   text-align: center;
   padding-top: 15px;
+}
+
+.partners__load-more{
+  display: block;
+  font-size: 14px;
+  font-family: var(--main-font);
+  color: #ff4d4f;
+  text-align: center;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  
+}
+
+@media(min-width:747px){
+  .container{
+    width: 748px;
+  }
+  .page-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 45px 50px 150px 50px;
+    box-sizing: border-box;
+  }
 }
