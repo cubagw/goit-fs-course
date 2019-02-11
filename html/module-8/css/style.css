@@ -25,27 +25,33 @@ a {
 }
 
 .container {
-  width:100%;
+  width:320px;
   margin: 0 auto;
   text-decoration: none;
+  padding: 0 20px 0 20px;
   
 }
 
 .page-header {
   position: absolute;
-  padding: 20px 65px 0px 65px;
+  
+  width: 100%;
 }
 
 .saite-authorization {
-  padding-bottom: 110px;
+  
+  
 }
+
 .header{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  justify-content: center;
 }
 .authorization-list {
   display: flex;
+  
   
 }
 
@@ -58,7 +64,7 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-sizing: border-box
+  
 }
 
 .authorization-list-item:hover {
@@ -234,6 +240,7 @@ a {
   
   .container{
     width: 748px;
+    
   }
   .page-header{
     width: 100%;
