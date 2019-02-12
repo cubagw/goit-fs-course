@@ -44,6 +44,7 @@ a {
 }
 
 .header{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -160,9 +161,10 @@ a {
 .partners__partners-list-item {
   text-decoration: none;
   padding-bottom: 25px;
-  width: 235px;
+  width: 100%;  
+  
   margin: 0 auto;
- 
+  
 }
 
 .partners-foto {
@@ -170,6 +172,8 @@ a {
   width: 120px;
   height: 120px;
   margin: 0 auto;
+  border-radius: 50%;
+  
 }
 
 .partners-foto::before {
@@ -247,6 +251,10 @@ a {
     padding: 45px 50px 0px 50px;
     box-sizing: border-box;
     
+  }
+
+  .header{
+    justify-content: space-between;
   }
   .page-header__site-logo{
     display: block;
