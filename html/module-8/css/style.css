@@ -126,7 +126,7 @@ a {
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.2;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .page-banner__search-partner {
@@ -162,9 +162,7 @@ a {
   text-decoration: none;
   padding-bottom: 25px;
   width: 100%;  
-  
   margin: 0 auto;
-  
 }
 
 .partners-foto {
@@ -240,7 +238,7 @@ a {
   
 }
 
-@media(min-width:748px){
+@media(min-width:768px){
   
   .container{
     width: 748px;
@@ -255,6 +253,7 @@ a {
 
   .header{
     justify-content: space-between;
+    width: 100%;
   }
   .page-header__site-logo{
     display: block;
@@ -269,4 +268,45 @@ a {
   .page-banner__sub-slogan {
     font-size: 24px;
   }
+  .partners__partners-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  .partners__partners-list-item{
+    width: 320px;
+    flex-shrink: 0;
+    
+  }
+  .page-banner__slogan{
+    width: 620px;
+    margin: 0 auto;
+  }
+  
+}
+
+@media(min-width:940px){
+
+  .container{
+    width: 940px;
+  }
+
+  .partners__partners-list-item{
+    width: 220px;
+  
+    
+  }
+  
+
+  .partners__partners-list{
+    
+    flex-wrap: nowrap;
+    }
+
+    .partners{
+      padding-bottom: 75px;
+    }
+    
 }
