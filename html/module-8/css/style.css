@@ -42,9 +42,10 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
+
 .authorization-list {
   display: flex;
 }
@@ -73,13 +74,18 @@ a {
   font-family: var(--main-font);
 }
 .page-header__site-logo {
+ display: none;
+}
+
+.page-header__site-logo-link {
+  text-decoration:none ;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   color: #ffffff;
   font-family: var(--main-font);
   text-align: center;
-  display: none;
+  
 }
 
 .page-banner {
@@ -137,6 +143,7 @@ a {
   margin: 0 auto;
   line-height: 40px;
   transition: all 200ms linear;
+  margin-bottom: 20px;
 }
 
 .page-banner__search-partner:hover{
@@ -256,6 +263,7 @@ order: 1;
   margin: 0 auto;
   line-height: 40px;
   transition: all 200ms linear;
+  cursor: pointer;
 }
 
 .partners__load-more:hover{
