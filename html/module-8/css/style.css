@@ -116,7 +116,22 @@ a {
   padding-bottom: 15px;
   line-height: 1.2;
   padding-top: 35px;
+  animation: logo-down .6s .25s forwards;
+  transform: translateX(-1300px);
 }
+
+@keyframes logo-down{
+  0%{
+      opacity: 0;
+  }
+  70%{
+    opacity: 0.4;
+}
+
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }}
 
 .page-banner__sub-slogan {
   font-size: 18px;
@@ -126,6 +141,8 @@ a {
   letter-spacing: 1px;
   line-height: 1.2;
   padding-bottom: 35px;
+  animation: logo-down .6s .25s forwards;
+  transform: translateX(-1300px);
 }
 
 .page-banner__search-partner {
@@ -144,6 +161,8 @@ a {
   line-height: 40px;
   transition: all 200ms linear;
   margin-bottom: 20px;
+  animation: logo-down .6s .25s forwards;
+  transform: translateX(1300px);
 }
 
 .page-banner__search-partner:hover{
@@ -176,6 +195,11 @@ a {
   padding-bottom: 25px;
   width: 100%;
   margin: 0 auto;
+  
+}
+
+.partners__partners-list-item:hover {
+  
 }
 
 .flex1{
