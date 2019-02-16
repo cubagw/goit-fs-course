@@ -29,13 +29,11 @@ a {
   padding: 0 20px 0 20px;
 }
 
+/* ----HEADER---- */
+
 .page-header {
   position: absolute;
-
   width: 100%;
-}
-
-.saite-authorization {
 }
 
 .header {
@@ -54,7 +52,6 @@ a {
   width: 90px;
   height: 36px;
   border-radius: 18px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,20 +70,23 @@ a {
   color: #ffffff;
   font-family: var(--main-font);
 }
+
+/* ----logo for min-width 768---- */
 .page-header__site-logo {
- display: none;
+  display: none;
 }
 
 .page-header__site-logo-link {
-  text-decoration:none ;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   color: #ffffff;
   font-family: var(--main-font);
   text-align: center;
-  
 }
+
+/* ----BANER---- */
 
 .page-banner {
   min-height: 100vh;
@@ -96,8 +96,7 @@ a {
   background-color: rgb(26, 25, 21);
   background-size: cover;
 }
-
-.page-banner__logo {
+1 .page-banner__logo {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
@@ -110,28 +109,30 @@ a {
 .page-banner__slogan {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Montserrat_Bold", sans-serif;
+  font-family: var(--main-font);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 15px;
   line-height: 1.2;
   padding-top: 35px;
-  animation: logo-down .6s .25s forwards;
+  animation: slogan-drive 0.6s 0.25s forwards;
   transform: translateX(-1300px);
 }
 
-@keyframes logo-down{
-  0%{
-      opacity: 0;
+/* ----animations for slogan, sub-slogan---- */
+@keyframes slogan-drive {
+  0% {
+    opacity: 0;
   }
-  70%{
+  70% {
     opacity: 0.4;
-}
+  }
 
-  100%{
-      transform: translateX(0);
-      opacity: 1;
-  }}
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .page-banner__sub-slogan {
   font-size: 18px;
@@ -141,7 +142,7 @@ a {
   letter-spacing: 1px;
   line-height: 1.2;
   padding-bottom: 35px;
-  animation: logo-down .6s .25s forwards;
+  animation: slogan-drive 0.6s 0.25s forwards;
   transform: translateX(-1300px);
 }
 
@@ -161,24 +162,20 @@ a {
   line-height: 40px;
   transition: all 200ms linear;
   margin-bottom: 20px;
-  animation: logo-down .6s .25s forwards;
+  animation: slogan-drive 0.6s 0.25s forwards;
   transform: translateX(1300px);
 }
 
-.page-banner__search-partner:hover{
-  
+.page-banner__search-partner:hover {
   color: #ff4d4f;
-
   border: 2px solid #ff4e50;
   background-color: #ffffff;
-  
 }
 
-
+/* ----PARTNERS SECTION---- */
 
 .partners {
   padding-bottom: 55px;
-  
 }
 
 .partners__slogan {
@@ -195,26 +192,21 @@ a {
   padding-bottom: 25px;
   width: 100%;
   margin: 0 auto;
-  
 }
 
-.partners__partners-list-item:hover {
-  
+.flex1 {
+  order: 1;
 }
 
-.flex1{
-order: 1;
-}
-
-.flex2{
+.flex2 {
   order: 3;
 }
 
-.flex3{
+.flex3 {
   order: 2;
 }
 
-.flex4{
+.flex4 {
   order: 4;
 }
 
@@ -226,6 +218,7 @@ order: 1;
   border-radius: 50%;
 }
 
+/* ----icons for partners foto---- */
 .partners-foto::before {
   content: "";
   display: block;
@@ -291,11 +284,14 @@ order: 1;
   cursor: pointer;
 }
 
-.partners__load-more:hover{
+.partners__load-more:hover {
   color: #ff4d4f;
   border: 2px solid #ff4e50;
   background-color: #ffffff;
 }
+
+
+/* ----CHANGES FOR TABLET---- */
 
 @media (min-width: 768px) {
   .container {
@@ -314,13 +310,16 @@ order: 1;
   .page-header__site-logo {
     display: block;
   }
+
   .page-banner__logo {
     display: none;
   }
+
   .page-banner__slogan {
     padding-top: 225px;
     font-size: 52px;
   }
+
   .page-banner__sub-slogan {
     font-size: 24px;
   }
@@ -333,11 +332,14 @@ order: 1;
     width: 320px;
     flex-shrink: 0;
   }
+
   .page-banner__slogan {
     width: 620px;
     margin: 0 auto;
   }
 }
+
+/* ----CHANGES FOR DESCTOP---- */
 
 @media (min-width: 940px) {
   .container {
