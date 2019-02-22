@@ -6,7 +6,6 @@
 
 @import "./vars.css";
 
-
 html {
   margin: 0;
   padding: 0;
@@ -23,31 +22,28 @@ a {
   text-decoration: none;
 }
 
-.jc-centr{
+.jc-centr {
   justify-content: center;
 }
-
-
 
 /* ----HEADER---- */
 
 .page-header {
   position: absolute;
   width: 100%;
- }
-
-.header {
-
 }
 
-.saite-authorization{
- }
+.header {
+}
+
+.saite-authorization {
+}
 
 .authorization-list {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
 .authorization-list-item {
   width: 90px;
@@ -100,7 +96,7 @@ a {
   background-color: rgb(26, 25, 21);
   background-size: cover;
 }
- .page-banner__logo {
+.page-banner__logo {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
@@ -195,7 +191,6 @@ a {
   text-decoration: none;
   padding-bottom: 25px;
   width: 100%;
-  
 }
 
 .flex1 {
@@ -294,25 +289,22 @@ a {
   background-color: #ffffff;
 }
 
-
 /* ----CHANGES FOR TABLET---- */
 
-@media (min-width: 748px){
-  .jc-md4-between{
+@media (min-width: 748px) {
+  .jc-md4-between {
     justify-content: space-between;
   }
 
-  .ali-centr{
+  .ali-centr {
     align-items: center;
   }
 
   .page-header {
     padding-top: 30px;
-    
   }
   .page-header__site-logo {
     display: block;
-   
   }
 
   .page-banner__logo {
@@ -328,12 +320,7 @@ a {
     font-size: 24px;
   }
   .partners__partners-list {
-    
-    
-    
   }
-
-
 }
 
 /* ----CHANGES FOR DESCTOP---- */
