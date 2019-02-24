@@ -188,9 +188,9 @@ a {
 }
 
 .partners__partners-list-item {
-  text-decoration: none;
+  
   padding-bottom: 25px;
-  width: 100%;
+  
 }
 
 .flex1 {
@@ -289,17 +289,23 @@ a {
   background-color: #ffffff;
 }
 
+
+
+@media (max-width: 575px) {
+  .partners {
+    padding-right: calc((100% - 300px) / 2);
+    padding-left: calc((100% - 300px) / 2);
+  }
+
+  
+}
+
 /* ----CHANGES FOR TABLET---- */
 
-@media (min-width: 748px) {
-  .jc-md4-between {
-    justify-content: space-between;
-  }
 
-  .ali-centr {
-    align-items: center;
-  }
 
+@media (min-width: 768px) {
+ 
   .page-header {
     padding-top: 30px;
   }
@@ -319,26 +325,14 @@ a {
   .page-banner__sub-slogan {
     font-size: 24px;
   }
-  .partners__partners-list {
-  }
+  
 }
 
 /* ----CHANGES FOR DESCTOP---- */
 
 @media (min-width: 940px) {
-  .container {
-    width: 940px;
-  }
-
-  .partners__partners-list-item {
-    width: 220px;
-  }
-
-  .partners__partners-list {
-    flex-wrap: nowrap;
-  }
-
-  .partners {
+ 
+   .partners {
     padding-bottom: 75px;
   }
 }

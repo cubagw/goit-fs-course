@@ -23,21 +23,24 @@ html {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container {
-    width: 540px;
-  }
-}
+
+
 
 @media (min-width: 748px) {
   .container {
-    width: 748px;
+    max-width: 728px;
   }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 768px) {
   .container {
-    width: 940px;
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
 }
 
