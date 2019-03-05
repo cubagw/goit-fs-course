@@ -1,0 +1,17 @@
+:root {
+    --main-font:"Montserrat", sans-serif;
+    --main-font-bold:"Montserrat_Bold", sans-serif;
+    --semi-font:"Roboto_Reg", sans-serif;
+    --semi-font-ligt:"Roboto_Light", sans-serif;
+    --semi-font-italic: "Roboto_ligt_italic", sans-serif;
+    --script-font: "kaushan_script_reg", sans-serif;
+
+    --main-font-colour: #ffffff;
+    --semi-font-colour: #333333;
+    --ligt-font-colour: #999999;
+    --hov-font-colour: #fce38a;
+
+    font-size: 62.5%;
+
+    
+  }
