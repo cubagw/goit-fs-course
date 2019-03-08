@@ -44,8 +44,6 @@ img {
   margin: 0 auto;
 }
 
-
-
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -54,8 +52,8 @@ img {
   flex-wrap: nowrap;
 }
 
-.page-header--mp{
-padding-top: 2.5rem;
+.page-header--mp {
+  padding-top: 2.5rem;
 }
 
 .page-menu {
@@ -101,11 +99,11 @@ padding-top: 2.5rem;
   transition: color 200ms linear;
 }
 
-.site-nav__link:hover {
+.site-nav__link--hover:hover {
   color: var(--hov-font-colour);
 }
 
-.button__icon:hover {
+.button__icon--hover:hover {
   fill: var(--hov-font-colour);
 }
 
@@ -120,19 +118,17 @@ padding-top: 2.5rem;
   transition: opacity 200ms linear;
 }
 
-.site-nav__item:hover .site-nav__link::after {
+.site-nav__item--hover:hover .site-nav__link::after {
   opacity: 1;
 }
 
 .page-premier {
-  
   text-align: center;
 }
 
 .page-premier--mp {
   width: 100%;
   padding: 19rem 16rem;
-  
 }
 
 .page-premier__sub-slogan {
@@ -166,12 +162,12 @@ padding-top: 2.5rem;
   line-height: 3.8rem;
 }
 
-.page-premier__link:hover {
+.page-premier__link--hover:hover {
   border-color: var(--hov-font-colour);
   color: var(--hov-font-colour);
 }
 
-.section__title {
+.section-title {
   font-size: 3rem;
   font-family: var(--main-font-bold);
   color: var(--semi-font-colour);
@@ -181,7 +177,7 @@ padding-top: 2.5rem;
   margin-bottom: 6rem;
 }
 
-.section__title::after {
+.section-title::after {
   content: "";
   display: block;
   width: 6rem;
@@ -191,7 +187,7 @@ padding-top: 2.5rem;
   margin-top: 4rem;
 }
 
-.section__subtitle {
+.section-subtitle {
   margin-bottom: 2rem;
   display: block;
   font-size: 2.4rem;
@@ -201,7 +197,7 @@ padding-top: 2.5rem;
   text-transform: lowercase;
 }
 
-.section__subtitle:first-letter {
+.section-subtitle:first-letter {
   text-transform: uppercase;
 }
 
@@ -257,7 +253,6 @@ padding-top: 2.5rem;
 }
 
 .team-text--mp {
-  
   padding: 0 12rem;
   margin-bottom: 9rem;
 }
@@ -305,10 +300,7 @@ padding-top: 2.5rem;
   z-index: 3;
 }
 
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-.team-member:hover .team-member__overlay {
+.team-member--hover:hover .team-member__overlay {
   opacity: 0.9;
   top: -1rem;
   left: -1rem;
@@ -330,11 +322,7 @@ padding-top: 2.5rem;
   left: 0px;
 }
 
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-.team-member:hover .clear-image {
+.team-member--hover:hover .clear-image {
   transform: translate(-1rem, -1rem);
 }
 
@@ -372,7 +360,7 @@ padding-top: 2.5rem;
   height: 3.2rem;
 }
 
-.team-member__soc-button :hover {
+.team-member__soc-button--hover:hover {
   fill: #ffffff;
   background-color: var(--hov-semi-font-colour);
 }
@@ -393,7 +381,7 @@ padding-top: 2.5rem;
   text-align: center;
 }
 
-.footer--mp{
+.footer--mp {
   min-height: 6rem;
 }
 
