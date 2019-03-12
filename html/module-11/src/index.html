@@ -1,32 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="copyright" content="Author" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Application Name" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="theme-color" content="#000000">
-  <meta name="copyright" content="Author">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <meta name="apple-mobile-web-app-title" content="Application Name">
-  <meta name="msapplication-TileImage" content="images/favicons/144x144.png">
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="format-detection" content="telephone=no">
+    <title>module-11</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
 
-  <title>Placeholder title</title>
-  <link rel="stylesheet" href="css/styles.min.css">
-</head>
+  <body>
+    <div class="head-wrapper">
+      <div class="container">
+        <header class="page-header page-header--mp">
+          <h1 class="page-logo">
+            <a href="#" class="page-logo__link link">
+              MoGo
+            </a>
+          </h1>
+          <div class="page-menu">
+            <nav class="page-nav">
+              <ul class="site-nav">
+                <li class="site-nav__item site-nav__item--hover">
+                  <a href="" class="site-nav__link site-nav__link--hover link"
+                    >about</a
+                  >
+                </li>
+                <li class="site-nav__item site-nav__item--hover">
+                  <a href="" class="site-nav__link site-nav__link--hover link"
+                    >servise</a
+                  >
+                </li>
+                <li class="site-nav__item site-nav__item--hover">
+                  <a href="" class="site-nav__link site-nav__link--hover link"
+                    >work</a
+                  >
+                </li>
+                <li class="site-nav__item site-nav__item--hover">
+                  <a href="" class="site-nav__link site-nav__link--hover link"
+                    >blog</a
+                  >
+                </li>
+                <li class="site-nav__item site-nav__item--hover">
+                  <a href="" class="site-nav__link site-nav__link--hover link"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header-buttons">
+              <a href="#" class="button">
+                <svg
+                  class=" button__icon button__icon--sarch button__icon--hover"
+                >
+                  <use href="./images/sprite.svg#icon-glass"></use>
+                </svg>
+              </a>
 
-<body>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, provident vitae saepe est aliquam eligendi voluptate quis similique porro temporibus voluptatem molestiae. Vero, aspernatur dolor deleniti vel fugiat voluptates nemo.
-Fuga, quo placeat rerum assumenda ad est quae velit doloribus mollitia et officia eveniet reprehenderit commodi recusandae deleniti ea culpa. Blanditiis commodi corrupti saepe autem atque soluta illum fugiat porro?
-Minima corporis, eligendi vitae vero consectetur eveniet reiciendis quam aperiam repudiandae in, ducimus ad, omnis deserunt voluptatum animi! Eos officia repellat saepe aperiam veritatis, ducimus libero totam voluptatibus laboriosam hic?
-Deserunt natus sit ducimus recusandae unde accusantium error, modi quam adipisci maxime explicabo laborum atque repellendus? Tempore, libero. Eveniet possimus aliquam laboriosam temporibus ducimus, maxime vero dicta rerum itaque dignissimos!
-Modi repudiandae natus sed re?</p>
-  <script src="js/scripts.min.js"></script>
-</body>
+              <a href="#" class="button">
+                <svg
+                  class="button__icon button__icon--cart button__icon--hover"
+                >
+                  <use href="./images/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </header>
 
+        <section class="page-premier page-premier--mp">
+          <h4 class="page-premier__sub-slogan">
+            creative template
+          </h4>
+          <h3 class="page-premier__slogan">
+            welcome to mogo
+          </h3>
+          <a href="#" class="page-premier__link page-premier__link--hover link"
+            >learn more</a
+          >
+        </section>
+      </div>
+    </div>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-subtitle">we work with</span>amazing services
+        </h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-line"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">photography</h3>
+              <p class="services__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
+                amet consectetur
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-book"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">web design</h3>
+              <p class="services__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
+                amet consectetur
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-home"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">сreativity</h3>
+              <p class="services__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
+                amet consectetur
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-comp"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">seo</h3>
+              <p class="services__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-alarm"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">css/html</h3>
+              <p class="services__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon">
+              <use href="./images/sprite.svg#icon-image"></use>
+            </svg>
+            <div class="services__text">
+              <h3 class="services__title">digital</h3>
+              <p class="services__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="team team--mp">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-subtitle">who we are</span>meet our team
+        </h2>
+        <p class="team-text team-text--mp">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <ul class="team-list">
+          <li class="team-member team-member--mp team-member--hover">
+            <figure>
+              <div class="team-member__image">
+                <img
+                  class="clear-image clear-image--mp"
+                  srcset="
+                    ./images/layer_14-min.jpg  380w,
+                    images/layer_14@2x-min.jpg 760w
+                  "
+                  sizes="380"
+                  alt="team member"
+                  height="470"
+                />
+                <div class="team-member__overlay">
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--twitter"
+                    >
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--pinterest"
+                    >
+                      <use href="./images/sprite.svg#icon-pinterest"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--instagram"
+                    >
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--facebook"
+                    >
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team-member__background"></div>
+              </div>
+
+              <figcaption class="team-member__description">
+                <h3 class="team-member__description--neme">Matthew Dix</h3>
+                <p class="team-member__description--pos">Graphic Design</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="team-member team-member--mp team-member--hover">
+            <figure>
+              <div class="team-member__image">
+                <img
+                  class="clear-image clear-image--mp"
+                  srcset="
+                    ./images/layer_19-min.jpg  380w,
+                    images/layer_19@2x-min.jpg 760w
+                  "
+                  sizes="380"
+                  alt="team member"
+                  height="470"
+                />
+                <div class="team-member__overlay">
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--twitter"
+                    >
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--pinterest"
+                    >
+                      <use href="./images/sprite.svg#icon-pinterest"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--instagram"
+                    >
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--facebook"
+                    >
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team-member__background"></div>
+              </div>
+
+              <figcaption class="team-member__description">
+                <h3 class="team-member__description--neme">
+                  Christopher Campbell
+                </h3>
+                <p class="team-member__description--pos">Branding/UX design</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="team-member team-member--mp team-member--hover">
+            <figure>
+              <div class="team-member__image">
+                <img
+                  class="clear-image clear-image--mp"
+                  srcset="
+                    ./images/layer_18-min.jpg  380w,
+                    images/layer_18@2x-min.jpg 760w
+                  "
+                  sizes="380"
+                  alt="team member"
+                  height="470"
+                />
+                <div class="team-member__overlay">
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--twitter"
+                    >
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                  >
+                    <svg
+                      class="team-member__soc-button-img team-member__soc-button-img--pinterest"
+                    >
+                      <use href="./images/sprite.svg#icon-pinterest"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--instagram"
+                    >
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="team-member__soc-button team-member__soc-button--hover"
+                    ><svg
+                      class="team-member__soc-button-img team-member__soc-button-img--facebook"
+                    >
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team-member__background"></div>
+              </div>
+
+              <figcaption class="team-member__description">
+                <h3 class="team-member__description--neme">Michael Fertig</h3>
+                <p class="team-member__description--pos">Developer</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer footer--mp">
+      <div class="container">
+        <div class="page-footer">
+          <p class="copyright">
+            © 2016 MoGo free PSD template by <a href="" class="avtor">Laaqiq</a>
+          </p>
+          <form class="subscribe-form" action="#" id="footer-subscribe-form">
+            <input
+              class="subscribe-form__input-email"
+              type="email"
+              placeholder="Your Email... "
+              name="email"
+            />
+            <button class="subscribe-form__button" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
