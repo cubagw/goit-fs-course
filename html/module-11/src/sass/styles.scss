@@ -2,24 +2,24 @@
    Import partials below
 */
 
-@import "./reset";
+@import "reset";
 
-@import "./fonts";
+@import "fonts";
 
-@import "./vars";
+@import "vars";
 
-@import "./layouts/common-styles";
+@import "layouts/common-styles";
 
 // ------layouts elements------
 
-@import "./layouts/head-wrapper";
+@import "layouts/head-wrapper";
 
-@import "./layouts/page-primer";
+@import "layouts/page-primer";
 
-@import "./layouts/section-titel-design";
+@import "layouts/section-titel-design";
 
-@import "./layouts/services-section";
+@import "layouts/services-section";
 
-@import "./layouts/team-section";
+@import "layouts/team-section";
 
-@import "./layouts/footer";
+@import "layouts/footer";
