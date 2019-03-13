@@ -1,0 +1,25 @@
+/*
+   Import partials below
+*/
+
+@import "./reset";
+
+@import "./fonts";
+
+@import "./vars";
+
+@import "./layouts/common-styles";
+
+// ------layouts elements------
+
+@import "./layouts/head-wrapper";
+
+@import "./layouts/page-primer";
+
+@import "./layouts/section-titel-design";
+
+@import "./layouts/services-section";
+
+@import "./layouts/team-section";
+
+@import "./layouts/footer";

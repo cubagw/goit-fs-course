@@ -1,0 +1,36 @@
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    width: 100%;
+  }
+  
+  .services__item {
+    display: flex;
+    width: 38rem;
+    padding-bottom: 10rem;
+  }
+  
+  .services__icon {
+    fill: #95e1d3;
+    display: block;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-right: 3rem;
+    flex-shrink: 0;
+  }
+  
+  .services__title {
+    font-size: 1.4rem;
+    font-family: var(--main-font);
+    color: var(--semi-font-colour);
+    text-transform: uppercase;
+  }
+  
+  .services__description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-family: var(--semi-font);
+    color: var(--ligt-font-colour);
+  }

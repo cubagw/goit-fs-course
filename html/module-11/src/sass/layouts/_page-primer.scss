@@ -1,0 +1,44 @@
+.page-premier {
+    text-align: center;
+  }
+  
+  .page-premier--mp {
+    width: 100%;
+    padding: 19rem 16rem;
+  }
+  
+  .page-premier__sub-slogan {
+    font-size: 7.2rem;
+    text-transform: capitalize;
+    font-family: var(--script-font);
+    color: var(--main-font-colour);
+    margin-bottom: 4rem;
+  }
+  
+  .page-premier__slogan {
+    font-size: 15rem;
+    line-height: 14rem;
+    text-transform: uppercase;
+    font-family: var(--main-font-bold);
+    color: var(--main-font-colour);
+    margin-bottom: 12rem;
+  }
+  
+  .page-premier__link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: var(--main-font-bold);
+    color: var(--main-font-colour);
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: var(--main-font-colour);
+    width: 16.04rem;
+    height: 4.4rem;
+    margin: 0 auto;
+    line-height: 3.8rem;
+  }
+  
+  .page-premier__link--hover:hover {
+    border-color: var(--hov-font-colour);
+    color: var(--hov-font-colour);
+  }
