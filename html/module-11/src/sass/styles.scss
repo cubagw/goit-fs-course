@@ -2,11 +2,13 @@
    Import partials below
 */
 
-@import "reset";
+@import "helpers/reset";
 
 @import "fonts";
 
-@import "vars";
+@import "helpers/vars";
+
+@import "helpers/mixins";
 
 @import "layouts/common-styles";
 

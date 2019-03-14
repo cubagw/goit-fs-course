@@ -10,12 +10,13 @@
     text-align: center;
     padding: 0 12rem;
     margin-bottom: 9rem;
+    &--mp {
+      padding: 0 12rem;
+      margin-bottom: 9rem;
+    }
   }
   
-  .team-text--mp {
-    padding: 0 12rem;
-    margin-bottom: 9rem;
-  }
+  
   
   .team-list {
     display: flex;
@@ -39,9 +40,7 @@
     top: 0px;
     left: 0px;
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centr;
     transition: all 200ms linear;
     z-index: 3;
   }
@@ -77,12 +76,14 @@
     height: 5.5rem;
     background-color: #fce38a;
     margin-right: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centr;
     opacity: 1;
     transition: background-color 200ms linear;
     fill: #f38181;
+    &:hover {
+      fill: #ffffff;
+      background-color: var(--hov-semi-font-colour);
+    }
   }
   
   .team-member__soc-button-img--twitter {
@@ -105,10 +106,7 @@
     height: 3.2rem;
   }
   
-  .team-member__soc-button--hover:hover {
-    fill: #ffffff;
-    background-color: var(--hov-semi-font-colour);
-  }
+ 
   
   .team-member__description--neme {
     font-size: 1.4rem;

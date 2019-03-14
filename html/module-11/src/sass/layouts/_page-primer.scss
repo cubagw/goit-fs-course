@@ -1,21 +1,17 @@
 .page-premier {
-    text-align: center;
-  }
-  
-  .page-premier--mp {
+  text-align: center;
+  &--mp {
     width: 100%;
     padding: 19rem 16rem;
   }
-  
-  .page-premier__sub-slogan {
+  &__sub-slogan {
     font-size: 7.2rem;
     text-transform: capitalize;
     font-family: var(--script-font);
     color: var(--main-font-colour);
     margin-bottom: 4rem;
   }
-  
-  .page-premier__slogan {
+  &__slogan {
     font-size: 15rem;
     line-height: 14rem;
     text-transform: uppercase;
@@ -23,8 +19,7 @@
     color: var(--main-font-colour);
     margin-bottom: 12rem;
   }
-  
-  .page-premier__link {
+  &__link {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-family: var(--main-font-bold);
@@ -36,9 +31,11 @@
     height: 4.4rem;
     margin: 0 auto;
     line-height: 3.8rem;
+    &:hover {
+      border-color: var(--hov-font-colour);
+      color: var(--hov-font-colour);
+    }
   }
-  
-  .page-premier__link--hover:hover {
-    border-color: var(--hov-font-colour);
-    color: var(--hov-font-colour);
-  }
+}
+
+//

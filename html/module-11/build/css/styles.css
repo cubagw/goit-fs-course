@@ -233,8 +233,9 @@ img {
 
 .page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   padding-top: 2.5rem;
   flex-wrap: nowrap;
 }
@@ -263,6 +264,7 @@ img {
 
 .header-buttons {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -272,6 +274,10 @@ img {
   width: 1.8rem;
   fill: var(--main-font-colour);
   transition: fill 200ms linear;
+}
+
+.button__icon:hover {
+  fill: var(--hov-font-colour);
 }
 
 .button__icon--sarch {
@@ -286,12 +292,8 @@ img {
   transition: color 200ms linear;
 }
 
-.site-nav__link--hover:hover {
+.site-nav__link:hover {
   color: var(--hov-font-colour);
-}
-
-.button__icon--hover:hover {
-  fill: var(--hov-font-colour);
 }
 
 .site-nav__link::after {
@@ -305,7 +307,7 @@ img {
   transition: opacity 200ms linear;
 }
 
-.site-nav__item--hover:hover .site-nav__link::after {
+.site-nav__item:hover .site-nav__link::after {
   opacity: 1;
 }
 
@@ -349,7 +351,7 @@ img {
   line-height: 3.8rem;
 }
 
-.page-premier__link--hover:hover {
+.page-premier__link:hover {
   border-color: var(--hov-font-colour);
   color: var(--hov-font-colour);
 }
@@ -512,6 +514,11 @@ img {
   fill: #f38181;
 }
 
+.team-member__soc-button:hover {
+  fill: #ffffff;
+  background-color: var(--hov-semi-font-colour);
+}
+
 .team-member__soc-button-img--twitter {
   width: 3.9rem;
   height: 3.2rem;
@@ -530,11 +537,6 @@ img {
 .team-member__soc-button-img--facebook {
   width: 1.5rem;
   height: 3.2rem;
-}
-
-.team-member__soc-button--hover:hover {
-  fill: #ffffff;
-  background-color: var(--hov-semi-font-colour);
 }
 
 .team-member__description--neme {

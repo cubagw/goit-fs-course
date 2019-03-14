@@ -6,16 +6,15 @@
     text-transform: uppercase;
     padding-top: 4.5rem;
     margin-bottom: 6rem;
-  }
-  
-  .section-title::after {
-    content: "";
-    display: block;
-    width: 6rem;
-    height: 0.3rem;
-    background-color: #f38181;
-    margin: 0 auto;
-    margin-top: 4rem;
+    &::after {
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 0.3rem;
+      background-color: #f38181;
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
   }
   
   .section-subtitle {
@@ -26,9 +25,9 @@
     color: var(--semi-font-colour);
     text-align: center;
     text-transform: lowercase;
+    &:first-letter {
+      text-transform: uppercase;
+    }
   }
   
-  .section-subtitle:first-letter {
-    text-transform: uppercase;
-  }
   
